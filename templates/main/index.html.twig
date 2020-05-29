@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Портфолио{% endblock %}
+
+{% block main %}
+    <main class="main">
+        <section class="section-head">
+            <div class="section-head__inner">
+                <div class="container i-font_face_roboto">
+                    <div class="section-head__row">
+                        <div class="section-head__content">
+                            <h1 class="section-head__title">HALIFAX WORDPRESS &
+                                WEB APP DEVELOPMENT</h1>
+                            <p class="section-head__description">Specializing in custom theme development. If you're a business seeking a web presence or are looking to hire, contact me here.</p>
+                        </div>
+                        <div class="section-head__cover">
+                            <img class="section-head__image" src="{{ asset('img/section-head.svg') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-portfolio">
+            <div class="section-portfolio__inner">
+                <div class="container i-font_face_roboto">
+                    <h2 class="title">PORTFOLIO</h2>
+                    <div class="section-portfolio__items">
+                        <div class="portfolio-items">
+                            <div class="portfolio-items__item-cover">
+                                <img class="portfolio-items__item-img" src="#" alt="cover">
+                            </div>
+                            <div class="portfolio-items__item-caption">
+                                <h3 class="portfolio-items__item-title"></h3>
+                                <a class="portfolio-items__item-link" href="#">VIEW PROJECT</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="section-portfolio__button">VIEW MORE PROJECT</button>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

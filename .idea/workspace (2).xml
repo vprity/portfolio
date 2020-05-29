@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0e2c493b-f4d1-4ca6-9132-9a28f2385b9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/footer/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/header/header.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/i-font/_face/i-font_face_roboto-bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/i-font/_face/i-font_face_roboto-bold_italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/i-font/_face/i-font_face_roboto-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/i-font/_face/i-font_face_roboto-light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/i-font/_face/i-font_face_roboto-light_italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/i-font/_face/i-font_face_roboto-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/i-font/_face/i-font_face_roboto.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bem/blocks/main/main.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/_footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/_navigation-header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\YD\PROJECT\web\portfolio\v3\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1binyG3ZKE7yizTr8VfftkCoJc2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/bem/blocks/i-font/_face" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\YD\PROJECT\web\portfolio\v3\public\bem\blocks\i-font\_face" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\YD\PROJECT\web\portfolio\v3\public\img" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e2c493b-f4d1-4ca6-9132-9a28f2385b9c" name="Default Changelist" comment="" />
+      <created>1589124033600</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589124033600</updated>
+      <workItem from="1589124037284" duration="958000" />
+      <workItem from="1589137079684" duration="16000" />
+      <workItem from="1589138113036" duration="1753000" />
+      <workItem from="1589194066558" duration="1490000" />
+      <workItem from="1589237222182" duration="305000" />
+      <workItem from="1589313340477" duration="4004000" />
+      <workItem from="1589382693511" duration="5497000" />
+      <workItem from="1589412107757" duration="1406000" />
+      <workItem from="1589483158247" duration="3820000" />
+      <workItem from="1589503930286" duration="599000" />
+      <workItem from="1589577420182" duration="2490000" />
+      <workItem from="1589726036643" duration="8191000" />
+      <workItem from="1589799739669" duration="2950000" />
+      <workItem from="1589818624056" duration="2085000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="232" y="154" key="#Plugins" timestamp="1589414521884">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="232" y="154" key="#Plugins/0.0.1280.994@0.0.1280.994" timestamp="1589414521884" />
+    <state x="362" y="299" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589414556478">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="362" y="299" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.994@0.0.1280.994" timestamp="1589414556478" />
+    <state x="275" y="274" key="EditFileWatcherDialog" timestamp="1589806322786">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="275" y="274" key="EditFileWatcherDialog/0.0.1280.994@0.0.1280.994" timestamp="1589806322786" />
+    <state x="141" y="128" key="SettingsEditor" timestamp="1589806315380">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="141" y="128" key="SettingsEditor/0.0.1280.994@0.0.1280.994" timestamp="1589806315380" />
+    <state x="303" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1589139332704">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="303" y="213" width="672" height="678" key="search.everywhere.popup/0.0.1280.994@0.0.1280.994" timestamp="1589139332704" />
+  </component>
+</project>
