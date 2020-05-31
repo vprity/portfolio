@@ -1,0 +1,53 @@
+.portfolio-items
+  display: grid
+  grid-template-columns: repeat(auto-fit, 300px)
+  grid-template-rows: auto
+  grid-gap: 10px
+  justify-content: center
+
+  &__item
+    position: relative
+    overflow: hidden
+    width: 100%
+    height: auto
+
+  &__item-cover
+
+  &__item-image
+    width: 100%
+    height: auto
+    object-fit: cover
+    border: 1px solid #f5f6f7
+
+  &__item-caption
+    display: none
+    position: absolute
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+    background: #464e55
+
+  &__item:hover &__item-caption
+    display: flex
+
+  &__item-title
+    color: #29A9F0
+    margin-bottom: 20px
+    font-size: 1em
+    font-weight: normal
+
+  &__item-link
+    text-decoration: none
+    background: linear-gradient(45deg, #29A9F0, #1E85BE)
+    color: #ffffff
+    padding: 10px 15px
+    border-radius: 4px
+
+  &__item-link:hover
+    background: linear-gradient(45deg, #1E85BE, #29A9F0)
+
+@media (max-width: 767px)
+  .portfolio-items
+    grid-template-columns: 1fr

@@ -5,16 +5,25 @@
     flex-direction: row
     list-style: none
 
+    @media (max-width: 576px)
+      display: none
+
   &__list-item:not(:last-child)
     margin-right: 15px
 
   &__link
     text-decoration: none
     color: #333333
-    transition: 150ms ease-in-out
+    transition: 100ms ease-in-out
 
   &__link:hover
     color: #01AEF1
 
   &__link--active
     color: #01AEF1
+
+  &__list-bars
+    display: none
+
+    @media (max-width: 576px)
+      display: block

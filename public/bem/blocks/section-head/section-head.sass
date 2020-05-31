@@ -3,19 +3,29 @@
   background: #ffffff
 
   &__inner
-    padding-top: 60px
 
   &__row
     display: flex
     flex-direction: row
     align-items: center
+    justify-content: center
+    min-height: 700px
+    height: 100vh
+
+    @media (max-width: 991px)
+      flex-direction: column
 
   &__content
     display: flex
     flex-direction: column
     justify-content: center
-    height: 100%
+    text-align: left
+    padding-right: 50px
     width: 50%
+
+    @media (max-width: 991px)
+      width: 100%
+      padding-right: 0
 
   &__title
     text-transform: uppercase
@@ -24,16 +34,22 @@
     color: #333333
 
   &__description
-    color: #333333
+    font-size: 1.5em
+    color: #666666
 
   &__cover
     text-align: center
     position: relative
-    padding: 50px 0
-    height: 100%
     width: 50%
 
+    @media (min-width: 768px) and (max-width: 991px)
+      margin-top: 50px
+
+    @media (max-width: 767px)
+      display: none
+
   &__image
+    display: block
     height: auto
     width: auto
     object-fit: cover
