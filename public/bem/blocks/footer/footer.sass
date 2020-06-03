@@ -1,3 +1,62 @@
 .footer
-  width: 100%
-  background: #2B3A4E
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  min-height: 100px
+  min-width: 200px
+  background: #333333
+
+  &__inner
+    padding: 10px 0
+
+  &__social
+    margin: 15px 0
+
+  &__social-list
+    list-style: none
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+  &__social-item:not(:last-child)
+    margin-right: 10px
+
+  &__social-link
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    height: 40px
+    width: 40px
+    border-radius: 4px
+    opacity: 0.5
+
+    &:hover
+      opacity: 1
+
+
+  &__social-link--facebook
+    background: #316CF1
+
+  &__social-link--twitter
+    background: #64A5DD
+
+  &__social-link--google
+    background: #DA5448
+
+  &__social-link--vk
+    background: #557DB8
+    
+  &__social-icon
+    height: 25px
+    fill: #ffffff
+    fill-rule: evenodd
+
+  &__copy
+    text-align: center
+    font-size: 12px
+    color: #778392
+    margin: 15px 0

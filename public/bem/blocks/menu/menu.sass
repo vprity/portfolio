@@ -7,9 +7,26 @@
 
     @media (max-width: 576px)
       display: none
+      flex-direction: column
+      align-items: center
+      position: absolute
+      top: 50px
+      right: 0
+      width: 100%
+      font-size: 1.3em
+      background: #ffffff
+      box-shadow: 0 5px 5px 0 rgba(100, 100, 100, 0.3)
+
+  &__list-item
+
+    @media (max-width: 576px)
+      padding: 10px
 
   &__list-item:not(:last-child)
     margin-right: 15px
+
+    @media (max-width: 576px)
+      margin-right: 0
 
   &__link
     text-decoration: none
@@ -22,8 +39,16 @@
   &__link--active
     color: #01AEF1
 
-  &__list-bars
+  &__bars
+    position: relative
     display: none
 
     @media (max-width: 576px)
       display: block
+
+  &__bars-icon
+    height: 30px
+    width: 30px
+    fill: #333333
+    fill-rule: evenodd
+    cursor: pointer

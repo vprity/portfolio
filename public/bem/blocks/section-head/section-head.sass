@@ -20,6 +20,7 @@
     flex-direction: column
     justify-content: center
     text-align: left
+    word-wrap: break-word
     padding-right: 50px
     width: 50%
 
@@ -32,6 +33,9 @@
     margin-bottom: 10px
     font-size: 3em
     color: #333333
+
+    @media (max-width: 576px)
+      font-size: 2em
 
   &__description
     font-size: 1.5em

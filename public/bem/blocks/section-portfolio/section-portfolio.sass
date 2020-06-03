@@ -1,5 +1,4 @@
 .section-portfolio
-  margin: 60px 0 30px 0
 
   &__title
     margin-bottom: 30px
@@ -21,6 +20,9 @@
     border: none
     background: linear-gradient(45deg, #29A9F0, #1E85BE)
     border-radius: 4px
+
+    @media (max-width: 576px)
+      width: 100%
 
   &__button:hover
     background: linear-gradient(45deg, #1E85BE, #29A9F0)

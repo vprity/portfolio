@@ -4,7 +4,7 @@
 
 {% block main %}
     <main class="main">
-        <section class="section-head">
+        <section class="section-head" id="home">
             <div class="section-head__inner">
                 <div class="container i-font_face_roboto">
                     <div class="section-head__row">
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-portfolio">
+        <section class="section-portfolio" id="portfolio">
             <div class="section-portfolio__inner">
                 <div class="container i-font_face_roboto">
                     <h2 class="title section-portfolio__title">PORTFOLIO</h2>
@@ -107,4 +107,11 @@
             </div>
         </section>
     </main>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/script.min.js') }}"></script>
+    <script>
+        menu_scroll();
+    </script>
 {% endblock %}
