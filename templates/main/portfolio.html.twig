@@ -1,0 +1,95 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Портфолио | Все проекты{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/style.css') }}">
+{% endblock %}
+
+{% block main %}
+    <main class="main">
+        <div class="main__inner">
+            <div class="container i-font_face_roboto">
+                <h1 class="main__title">Portfolio</h1>
+                <div class="portfolio-items">
+                    <div class="portfolio-items__item">
+                        <div class="portfolio-items__item-caption">
+                            <h3 class="portfolio-items__item-title">Project</h3>
+                            <a class="portfolio-items__item-link" href="#">View project</a>
+                        </div>
+                        <div class="portfolio-items__item-cover">
+                            <img class="portfolio-items__item-image" src="{{ asset('img/test.jpg') }}" alt="cover">
+                        </div>
+                    </div>
+                    <div class="portfolio-items__item">
+                        <div class="portfolio-items__item-caption">
+                            <h3 class="portfolio-items__item-title">Project</h3>
+                            <a class="portfolio-items__item-link" href="#">View project</a>
+                        </div>
+                        <div class="portfolio-items__item-cover">
+                            <img class="portfolio-items__item-image" src="{{ asset('img/test.jpg') }}" alt="cover">
+                        </div>
+                    </div>
+                    <div class="portfolio-items__item">
+                        <div class="portfolio-items__item-caption">
+                            <h3 class="portfolio-items__item-title">Project</h3>
+                            <a class="portfolio-items__item-link" href="#">View project</a>
+                        </div>
+                        <div class="portfolio-items__item-cover">
+                            <img class="portfolio-items__item-image" src="{{ asset('img/test.jpg') }}" alt="cover">
+                        </div>
+                    </div>
+                    <div class="portfolio-items__item">
+                        <div class="portfolio-items__item-caption">
+                            <h3 class="portfolio-items__item-title">Project</h3>
+                            <a class="portfolio-items__item-link" href="#">View project</a>
+                        </div>
+                        <div class="portfolio-items__item-cover">
+                            <img class="portfolio-items__item-image" src="{{ asset('img/test.jpg') }}" alt="cover">
+                        </div>
+                    </div>
+                    <div class="portfolio-items__item">
+                        <div class="portfolio-items__item-caption">
+                            <h3 class="portfolio-items__item-title">Project</h3>
+                            <a class="portfolio-items__item-link" href="#">View project</a>
+                        </div>
+                        <div class="portfolio-items__item-cover">
+                            <img class="portfolio-items__item-image" src="{{ asset('img/test.jpg') }}" alt="cover">
+                        </div>
+                    </div>
+                    <div class="portfolio-items__item">
+                        <div class="portfolio-items__item-caption">
+                            <h3 class="portfolio-items__item-title">Project</h3>
+                            <a class="portfolio-items__item-link" href="#">View project</a>
+                        </div>
+                        <div class="portfolio-items__item-cover">
+                            <img class="portfolio-items__item-image" src="{{ asset('img/test.jpg') }}" alt="cover">
+                        </div>
+                    </div>
+                    <div class="portfolio-items__item">
+                        <div class="portfolio-items__item-caption">
+                            <h3 class="portfolio-items__item-title">Project</h3>
+                            <a class="portfolio-items__item-link" href="#">View project</a>
+                        </div>
+                        <div class="portfolio-items__item-cover">
+                            <img class="portfolio-items__item-image" src="{{ asset('img/test.jpg') }}" alt="cover">
+                        </div>
+                    </div>
+                    <div class="portfolio-items__item">
+                        <div class="portfolio-items__item-caption">
+                            <h3 class="portfolio-items__item-title">Project</h3>
+                            <a class="portfolio-items__item-link" href="#">View project</a>
+                        </div>
+                        <div class="portfolio-items__item-cover">
+                            <img class="portfolio-items__item-image" src="{{ asset('img/test.jpg') }}" alt="cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/script.min.js') }}"></script>
+{% endblock %}

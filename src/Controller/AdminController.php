@@ -2,20 +2,22 @@
 
 namespace App\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/", name="main.")
+ * @Route("/admin", name="admin.")
+ * @IsGranted("IS_AUTHENTICATED_ANONYMOUSLY")
  */
-class MainController extends AbstractController
+class AdminController extends AbstractController
 {
     /**
      * @Route("/", name="index")
      */
     public function index()
     {
-        return $this->render('main/index.html.twig');
+        return $this->render('admin/index.html.twig');
     }
 
     /**
@@ -23,6 +25,8 @@ class MainController extends AbstractController
      */
     public function portfolio()
     {
-        return $this->render('main/portfolio.html.twig');
+        return $this->render('admin/portfolio.html.twig', [
+
+        ]);
     }
 }

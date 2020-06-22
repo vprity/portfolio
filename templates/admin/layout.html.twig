@@ -1,0 +1,14 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/style.admin.css') }}">
+{% endblock %}
+
+{% block main %}
+    <main class="admin-main">
+        <div class="admin-container">
+            {% include('admin/_admin-sidebar.html.twig') %}
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+{% endblock %}

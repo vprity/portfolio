@@ -1,0 +1,37 @@
+<aside class="admin-sidebar admin-main__sidebar i-font_face_roboto">
+    <nav class="admin-sidebar__menu">
+        <ul class="admin-sidebar__list">
+            {% set route = app.request.get('_route') %}
+            <li class="admin-sidebar__item">
+                <a class="admin-sidebar__link {{ 'admin.index' in route ? 'admin-sidebar__link--active' }}" href="{{ path('admin.index') }}">
+                    <svg class="admin-sidebar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M541 229.16l-61-49.83v-77.4a6 6 0 0 0-6-6h-20a6 6 0 0 0-6 6v51.33L308.19 39.14a32.16 32.16 0 0 0-40.38 0L35 229.16a8 8 0 0 0-1.16 11.24l10.1 12.41a8 8 0 0 0 11.2 1.19L96 220.62v243a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-128l64 .3V464a16 16 0 0 0 16 16l128-.33a16 16 0 0 0 16-16V220.62L520.86 254a8 8 0 0 0 11.25-1.16l10.1-12.41a8 8 0 0 0-1.21-11.27zm-93.11 218.59h.1l-96 .3V319.88a16.05 16.05 0 0 0-15.95-16l-96-.27a16 16 0 0 0-16.05 16v128.14H128V194.51L288 63.94l160 130.57z"/>
+                    </svg>
+                </a>
+                <div class="admin-sidebar__help">
+                    <span class="admin-sidebar__help-text">HOME</span>
+                </div>
+            </li>
+            <li class="admin-sidebar__item">
+                <a class="admin-sidebar__link {{ 'admin.portfolio' in route ? 'admin-sidebar__link--active' }}" href="{{ path('admin.portfolio') }}">
+                    <svg class="admin-sidebar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M464 128H352V56c0-13.26-10.74-24-24-24H184c-13.26 0-24 10.74-24 24v72H48c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM192 64h128v64H192V64zm288 368c0 8.82-7.18 16-16 16H48c-8.82 0-16-7.18-16-16V288h160v40c0 13.25 10.75 24 24 24h80c13.25 0 24-10.75 24-24v-40h160v144zM224 320v-32h64v32h-64zm256-64H32v-80c0-8.82 7.18-16 16-16h416c8.82 0 16 7.18 16 16v80z"/>
+                    </svg>
+                </a>
+                <div class="admin-sidebar__help">
+                    <span class="admin-sidebar__help-text">PORTFOLIO</span>
+                </div>
+            </li>
+            <li class="admin-sidebar__item">
+                <a class="admin-sidebar__link" href="#">
+                    <svg class="admin-sidebar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M500 416c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h8c6.6 0 12 5.4 12 12v340h468zM372 162l-84 54-86.5-84.5c-5.1-5.1-13.4-4.6-17.9 1L64 288v96h416l-90.3-216.7c-3-6.9-11.5-9.4-17.7-5.3zM96 299.2l98.7-131.3 89.3 89.3 85.8-57.2 61.7 152H96v-52.8z"/>
+                    </svg>
+                </a>
+                <div class="admin-sidebar__help">
+                    <span class="admin-sidebar__help-text">GRAPH</span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</aside>

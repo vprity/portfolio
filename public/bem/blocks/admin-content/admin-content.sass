@@ -1,0 +1,83 @@
+.admin-content
+  position: relative
+
+  &__inner
+    margin-left: 50px
+    padding: 20px
+
+  &__divided
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+  &__title
+    color: #333333
+    text-align: left
+    font-weight: 300
+    margin-bottom: 20px
+
+  &__main
+    width: 100%
+
+  &__table
+    width: 100%
+    border-collapse: collapse
+
+  &__table-head
+    text-align: left
+    color: #333333
+    font-size: 0.9em
+
+  &__head-row
+    height: 40px
+    border-bottom: 1px solid #EBEBEB
+
+  &__head-column
+    padding: 0 10px
+    font-weight: normal
+
+  &__table-body
+    text-align: left
+    color: #333333
+
+  &__body-row
+    height: 40px
+    border-bottom: 1px solid #EBEBEB
+
+  &__body-column
+    position: relative
+    padding: 0 10px
+    
+    &:last-child
+      width: 50px
+
+  &__tools
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    &:hover .admin-content__tools-list
+      display: flex
+
+  &__tools-icon
+    height: 30px
+    fill: #333333
+    fill-rule: evenodd
+    cursor: pointer
+
+  &__tools-list
+    list-style: none
+    position: absolute
+    display: none
+    flex-direction: column
+    top: 30px
+    right: 0
+    padding: 10px
+    background: #ffffff
+    border: 1px solid #EBEBEB
+    border-radius: 4px
+    z-index: 100
+
+  &__tools-item:not(:last-child)
+    margin-bottom: 5px

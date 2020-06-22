@@ -38,6 +38,36 @@ gulp.task('js', function() {
        .pipe(gulp.dest('./public/bundles/'));
 });
 
+gulp.task('sass-admin', function () {
+    return gulp.src('./public/bem/blocks/**/*.sass')
+        .pipe(gulp_order([
+            'punlic/bem/blocks/i-normalize/*.sass',
+            'public/bem/blocks/i-font/**/*.sass',
+            'public/bem/blocks/admin-container/*.sass',
+            'public/bem/blocks/admin-header/*.sass',
+            'public/bem/blocks/admin-menu/*.sass',
+            'public/bem/blocks/admin-main/*.sass',
+        ]))
+        .pipe(gulp_concat('style.admin.sass'))
+        .pipe(gulp_sass())
+        .pipe(gulp_group_media())
+        .pipe(gulp.dest('./public/bundles/'));
+});
+
+gulp.task('js-admin', function() {
+    return gulp.src('./public/bem/blocks/**/*.js')
+        .pipe(gulp_babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp_concat('script.admin.min.js'))
+        .pipe(gulp_uglify())
+        .pipe(gulp.dest('./public/bundles/'));
+});
+
+gulp.task('watch-admin', function() {
+    return gulp.watch('./public/bem/blocks/**/*.{sass, js}', gulp.series('sass-admin', 'js-admin'));
+});
+
 gulp.task('watch', function () {
     return gulp.watch('./public/bem/blocks/**/*.{sass,js}', gulp.series('sass', 'js'));
 });
