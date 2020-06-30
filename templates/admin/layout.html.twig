@@ -6,9 +6,10 @@
 
 {% block main %}
     <main class="admin-main">
-        <div class="admin-container">
+        <div class="admin-container i-font_face_roboto">
             {% include('admin/_admin-sidebar.html.twig') %}
             {% block content %}{% endblock %}
+            {% include('admin/_notification.html.twig') %}
         </div>
     </main>
 {% endblock %}

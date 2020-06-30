@@ -25,8 +25,6 @@ class AdminController extends AbstractController
      */
     public function portfolio()
     {
-        return $this->render('admin/portfolio.html.twig', [
-
-        ]);
+        return $this->render('admin/portfolio.html.twig');
     }
 }

@@ -19,6 +19,29 @@
   &__main
     width: 100%
 
+  &__toolbar
+    margin-bottom: 20px
+
+  &__toolbar-list
+    list-style: none
+    display: flex
+    flex-direction: row
+    justify-content: left
+
+  &__toolbar-item:not(:last-child)
+    margin-right: 20px
+
+  &__toolbar-link
+    text-decoration: none
+    display: block
+    padding: 5px
+    font-size: 0.9em
+    color: #ffffff
+    background: #3BA4EF
+
+    &:hover
+      background: #1E85BE
+
   &__table
     width: 100%
     border-collapse: collapse
@@ -76,8 +99,104 @@
     padding: 10px
     background: #ffffff
     border: 1px solid #EBEBEB
-    border-radius: 4px
+    border-radius: 2px
     z-index: 100
 
-  &__tools-item:not(:last-child)
-    margin-bottom: 5px
+  &__tools-item
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: left
+    padding: 5px
+    border-radius: 2px
+
+    &:hover
+      background: #EBEBEB
+
+  &__item-icon
+    height: 15px
+    margin-right: 5px
+    fill-rule: evenodd
+
+    &--default
+      fill: #333333
+
+    &--remove
+      fill: #B5036F
+
+  &__item-text
+
+    &--default
+      color: #333333
+
+    &--remove
+      color: #B5036F
+
+
+  &__form
+    display: flex
+    flex-direction: column
+
+  &__form-row
+    display: flex
+    flex-direction: row
+
+    &:not(:last-child)
+      margin-bottom: 20px
+
+  &__form-label
+    width: 300px
+    min-width: 150px
+    text-align: left
+
+  &__form-text
+    width: 500px
+    min-width: 250px
+    height: 30px
+    padding: 0 10px
+    border: 1px solid #EBEBEB
+    border-radius: 2px
+
+  &__form-label-file
+    position: relative
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 5px
+    background: #3BA4EF
+    border-radius: 2px
+    cursor: pointer
+
+    &:hover
+      background: #1E85BE
+
+  &__form-label-icon
+    height: 20px
+    fill: #ffffff
+    fill-rule: evenodd
+    margin-right: 10px
+
+  &__form-label-text
+    color: #ffffff
+    font-size: 0.9em
+
+  &__form-file
+    display: none
+    overflow: hidden
+    position: absolute
+    width: 1px
+    height: 1px
+    top: 0
+    left: 0
+
+  &__form-button
+    width: 200px
+    height: 30px
+    color: #ffffff
+    background: #3BA4EF
+    border: none
+    border-radius: 2px
+    cursor: pointer
+
+    &:hover
+      background: #1E85BE
