@@ -31,7 +31,7 @@ class PortfolioController extends AbstractController
             $em->persist($form->getData());
             $em->flush();
 
-            $this->addFlash('notice', 'Project added!');
+            $this->addFlash('success', 'Project added!');
 
             return $this->redirectToRoute('admin.portfolio');
         }

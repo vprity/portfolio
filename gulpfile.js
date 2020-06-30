@@ -7,7 +7,7 @@ const gulp_group_media = require('gulp-group-css-media-queries');
 const gulp_uglify = require('gulp-uglify');
 
 gulp.task('sass', function () {
-    return gulp.src('./public/bem/blocks/**/*.sass')
+    return gulp.src(['./public/bem/blocks/**/*.sass', '!./public/bem/blocks/admin-*/*.sass'])
         .pipe(gulp_order([
             'public/bem/blocks/i-normalize/*.sass',
             'public/bem/blocks/i-font/**/*.sass',
@@ -39,14 +39,18 @@ gulp.task('js', function() {
 });
 
 gulp.task('sass-admin', function () {
-    return gulp.src('./public/bem/blocks/**/*.sass')
+    return gulp.src(['./public/bem/blocks/admin-*/*.sass', './public/bem/blocks/i-*/**/*.sass'])
         .pipe(gulp_order([
-            'punlic/bem/blocks/i-normalize/*.sass',
-            'public/bem/blocks/i-font/**/*.sass',
-            'public/bem/blocks/admin-container/*.sass',
-            'public/bem/blocks/admin-header/*.sass',
-            'public/bem/blocks/admin-menu/*.sass',
-            'public/bem/blocks/admin-main/*.sass',
+            'i-normalize/*.sass',
+            'i-font/**/*.sass',
+            'admin-container/*.sass',
+            'admin-header/*.sass',
+            'admin-menu/*.sass',
+            'admin-logo/*.sass',
+            'admin-sidebar/*.sass',
+            'admin-main/*.sass',
+            'admin-content/*.sass',
+            'admin-notification/*.sass',
         ]))
         .pipe(gulp_concat('style.admin.sass'))
         .pipe(gulp_sass())
@@ -55,7 +59,7 @@ gulp.task('sass-admin', function () {
 });
 
 gulp.task('js-admin', function() {
-    return gulp.src('./public/bem/blocks/**/*.js')
+    return gulp.src('./public/bem/blocks/admin-*/*.js')
         .pipe(gulp_babel({
             presets: ['@babel/env']
         }))
@@ -65,7 +69,7 @@ gulp.task('js-admin', function() {
 });
 
 gulp.task('watch-admin', function() {
-    return gulp.watch('./public/bem/blocks/**/*.{sass, js}', gulp.series('sass-admin', 'js-admin'));
+    return gulp.watch('./public/bem/blocks/admin-*/*.{sass, js}', gulp.series('sass-admin', 'js-admin'));
 });
 
 gulp.task('watch', function () {
