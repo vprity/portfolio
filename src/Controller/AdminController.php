@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Portfolio;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -25,6 +26,12 @@ class AdminController extends AbstractController
      */
     public function portfolio()
     {
-        return $this->render('admin/portfolio.html.twig');
+        $portfolio_items = $this->getDoctrine()->getRepository(Portfolio::class)->findBy([], [
+            'id' => 'DESC',
+        ]);
+
+        return $this->render('admin/portfolio.html.twig', [
+            'portfolio_items' => $portfolio_items
+        ]);
     }
 }

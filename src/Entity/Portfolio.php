@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\PortfolioRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=PortfolioRepository::class)
@@ -20,6 +21,15 @@ class Portfolio
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(
+     *     message = "This field cannot be empty"
+     * )
+     * @Assert\Length(
+     *     min = 3,
+     *     max = 250,
+     *     minMessage = "Your project name must be at least {{ limit }} characters long",
+     *     maxMessage = "Your project name cannot be longer than {{ limit }} characters"
+     * )
      */
     private $name;
 

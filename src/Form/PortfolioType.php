@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\File;
 
 class PortfolioType extends AbstractType
 {
@@ -21,8 +22,18 @@ class PortfolioType extends AbstractType
                 'label' => 'Name project',
             ])
             ->add('cover', FileType::class, [
-                'required' => true,
                 'label' => 'File project',
+                'required' => true,
+                'mapped' => false,
+                'constraints' => [
+                    new File([
+                        'maxSize' => '50m',
+                        'mimeTypes' => [
+                            'image/png'
+                        ],
+                        'mimeTypesMessage' => 'Please upload a valid PNG document'
+                    ])
+                ]
             ])
             ->add('save', SubmitType::class)
         ;
