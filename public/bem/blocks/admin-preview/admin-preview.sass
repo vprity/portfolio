@@ -1,0 +1,63 @@
+.admin-preview
+
+  &--disabled
+    display: none
+
+  &--activated
+    display: block
+
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 30px
+    color: #ffffff
+    background: #3BA4EF
+    padding: 5px
+    font-size: 0.9em
+    border: none
+    border-radius: 2px
+    cursor: pointer
+
+    &:hover
+      background: #1E85BE
+
+  &__content
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(0, 0, 0, 0.9)
+    padding: 10px
+    z-index: 2000
+
+    &--disabled
+      display: none
+
+    &--activated
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+  &__content-button
+    position: absolute
+    top: 0
+    right: 0
+    height: 40px
+    width: 40px
+    padding: 5px
+    fill: #ffffff
+    fill-rule: evenodd
+    cursor: pointer
+    background: #3BA4EF
+
+    &:hover
+      background: #1E85BE
+
+  &__image
+    height: auto
+    width: auto
+    max-height: 100%
+    max-width: 100%

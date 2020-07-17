@@ -23,15 +23,16 @@ class PortfolioType extends AbstractType
             ])
             ->add('cover', FileType::class, [
                 'label' => 'File project',
-                'required' => true,
+                'required' => false,
                 'mapped' => false,
                 'constraints' => [
                     new File([
                         'maxSize' => '50m',
                         'mimeTypes' => [
-                            'image/png'
+                            'image/png',
+                            'image/jpeg'
                         ],
-                        'mimeTypesMessage' => 'Please upload a valid PNG document'
+                        'mimeTypesMessage' => 'Please upload a valid PNG, JPEG document'
                     ])
                 ]
             ])

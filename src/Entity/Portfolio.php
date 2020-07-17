@@ -48,6 +48,11 @@ class Portfolio
      */
     private $cover;
 
+    /**
+     * @ORM\OneToOne(targetEntity="Option")
+     */
+    private $option;
+
     public function __construct()
     {
         $this->setPublishedAt(new \DateTime());
@@ -106,6 +111,18 @@ class Portfolio
     public function setCover(string $cover): self
     {
         $this->cover = $cover;
+
+        return $this;
+    }
+
+    public function getOption(): ?Option
+    {
+        return $this->option;
+    }
+
+    public function setOption(?Option $option): self
+    {
+        $this->option = $option;
 
         return $this;
     }

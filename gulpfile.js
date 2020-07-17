@@ -69,7 +69,7 @@ gulp.task('js-admin', function() {
 });
 
 gulp.task('watch-admin', function() {
-    return gulp.watch('./public/bem/blocks/admin-*/*.{sass, js}', gulp.series('sass-admin', 'js-admin'));
+    return gulp.watch('./public/bem/blocks/admin-*/*.{sass,js}', gulp.series('sass-admin', 'js-admin'));
 });
 
 gulp.task('watch', function () {

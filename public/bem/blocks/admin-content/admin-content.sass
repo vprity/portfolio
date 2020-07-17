@@ -75,6 +75,20 @@
     &:last-child
       width: 50px
 
+  &__column-list
+    list-style: none
+    display: flex
+    flex-direction: row
+    justify-content: left
+
+  &__list-item
+    width: 20px
+    height: 20px
+
+  &__list-icon
+    fill: #333333
+    fill-rule: evenodd
+
   &__tools
     position: relative
     display: flex
@@ -114,6 +128,9 @@
     &--remove
       fill: #B5036F
 
+    &--success
+      fill: #75C49B
+
   &__item-link
     text-decoration: none
     position: relative
@@ -122,6 +139,22 @@
     justify-content: left
     padding: 5px
     border-radius: 2px
+
+    &:hover
+      background: #EBEBEB
+
+  &__item-button
+    border: none
+    background: none
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: left
+    font-size: 1em
+    width: 100%
+    padding: 5px
+    border-radius: 2px
+    cursor: pointer
 
     &:hover
       background: #EBEBEB
@@ -218,4 +251,7 @@
       list-style: none
 
   &__form-layout
+
+  &__admin-preview
+    margin-left: 10px
 
